@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Alert } from "reactstrap";
+import { Game } from "./pages/Game";
 
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <Alert color="primary">
+        <h1>Welcome to Frontdoor's Cross Functional Team Game zone! </h1>
+      </Alert>
+      <Router>
+        <Switch>
+          <Route exact path="/personality" component={Game}></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

@@ -1,38 +1,45 @@
-.App {
+input[type="radio"] {
+  position: absolute;
+}
+
+.admin-wrapper{
+  display: flex;
+}
+
+.statement-wrapper {
+  width: 70%;
+  margin: 0 10px;
+}
+
+.progress-wrapper {
+  margin-top: 10px;
+}
+.game-over {
+  text-align: center;
+  color: blue;
+}
+
+.chosen-player-name {
+  font-size: 4rem;
+  color: deepskyblue;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loader {
+  text-align: center;
+}
+.animated-text {
+  text-align: center;
+  font-size: 3rem;
+  color: skyblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.total-guesses {
+  padding: 5px;
+  margin: 10px 0;
+  line-height: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+label.disabled.list-group-item-action.list-group-item-success.list-group-item {
+  background-color: green;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
